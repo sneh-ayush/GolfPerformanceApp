@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "name": "Jordan Reed",
+    "club": "Driver",
+    "avgBallSpeed": 168.5,
+    "imageurl": "https://i.pravatar.cc/150?u=jordan-reed"
+  },
+  {
+    "id": "2",
+    "name": "Mia Chen",
+    "club": "Iron",
+    "avgBallSpeed": 124.2,
+    "imageurl": "https://i.pravatar.cc/150?u=mia-chen"
+  },
+  {
+    "id": "3",
+    "name": "Alex Morgan",
+    "club": "Driver",
+    "avgBallSpeed": 171.8,
+    "imageurl": "https://i.pravatar.cc/150?u=alex-morgan"
+  },
+  {
+    "id": "4",
+    "name": "Sam Patel",
+    "club": "Iron",
+    "avgBallSpeed": 118.6,
+    "imageurl": "https://i.pravatar.cc/150?u=sam-patel"
+  },
+  {
+    "id": "5",
+    "name": "Taylor Brooks",
+    "club": "Driver",
+    "avgBallSpeed": 175.2,
+    "imageurl": "https://i.pravatar.cc/150?u=taylor-brooks"
+  },
+  {
+    "id": "6",
+    "name": "Riley Nguyen",
+    "club": "Iron",
+    "avgBallSpeed": 121.4,
+    "imageurl": "https://i.pravatar.cc/150?u=riley-nguyen"
+  },
+  {
+    "id": "7",
+    "name": "Casey Walsh",
+    "club": "Driver",
+    "avgBallSpeed": 163.9,
+    "imageurl": "https://i.pravatar.cc/150?u=casey-walsh"
+  },
+  {
+    "id": "8",
+    "name": "Drew Martinez",
+    "club": "Iron",
+    "avgBallSpeed": 126.8,
+    "imageurl": "https://i.pravatar.cc/150?u=drew-martinez"
+  }
+]

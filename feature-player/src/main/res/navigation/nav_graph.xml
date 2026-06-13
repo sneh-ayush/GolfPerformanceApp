@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/playersFragment">
+
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="com.example.golfperf.players.list.PlayersFragment"
+        android:label="Players" />
+
+    <fragment
+        android:id="@+id/playerDetailFragment"
+        android:name="com.example.golfperf.players.detail.PlayerDetailFragment"
+        android:label="Player Detail">
+        <argument
+            android:name="playerId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

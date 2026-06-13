@@ -1,0 +1,146 @@
+[
+  {
+    "id": "101",
+    "playerid": "1",
+    "ball_speed": 172.3,
+    "launch_angle": 12.4,
+    "carry_distance": 285.6,
+    "clubtype": "Driver",
+    "spin_rate": 2450
+  },
+  {
+    "id": "102",
+    "playerid": "1",
+    "ball_speed": 165.8,
+    "launch_angle": 14.1,
+    "carry_distance": 271.2,
+    "clubtype": "Driver",
+    "spin_rate": 2680
+  },
+  {
+    "id": "201",
+    "playerid": "2",
+    "ball_speed": 128.5,
+    "launch_angle": 18.6,
+    "carry_distance": 198.4,
+    "clubtype": "7 Iron",
+    "spin_rate": 6200
+  },
+  {
+    "id": "202",
+    "playerid": "2",
+    "ball_speed": 119.2,
+    "launch_angle": 22.3,
+    "carry_distance": 165.7,
+    "clubtype": "9 Iron",
+    "spin_rate": 7100
+  },
+  {
+    "id": "301",
+    "playerid": "3",
+    "ball_speed": 174.1,
+    "launch_angle": 11.8,
+    "carry_distance": 292.3,
+    "clubtype": "Driver",
+    "spin_rate": 2380
+  },
+  {
+    "id": "302",
+    "playerid": "3",
+    "ball_speed": 169.4,
+    "launch_angle": 13.2,
+    "carry_distance": 278.9,
+    "clubtype": "Driver",
+    "spin_rate": 2550
+  },
+  {
+    "id": "401",
+    "playerid": "4",
+    "ball_speed": 122.1,
+    "launch_angle": 19.4,
+    "carry_distance": 182.3,
+    "clubtype": "7 Iron",
+    "spin_rate": 6400
+  },
+  {
+    "id": "402",
+    "playerid": "4",
+    "ball_speed": 115.0,
+    "launch_angle": 23.1,
+    "carry_distance": 158.6,
+    "clubtype": "9 Iron",
+    "spin_rate": 7250
+  },
+  {
+    "id": "501",
+    "playerid": "5",
+    "ball_speed": 178.6,
+    "launch_angle": 11.2,
+    "carry_distance": 298.4,
+    "clubtype": "Driver",
+    "spin_rate": 2310
+  },
+  {
+    "id": "502",
+    "playerid": "5",
+    "ball_speed": 171.8,
+    "launch_angle": 12.9,
+    "carry_distance": 284.7,
+    "clubtype": "Driver",
+    "spin_rate": 2490
+  },
+  {
+    "id": "601",
+    "playerid": "6",
+    "ball_speed": 125.3,
+    "launch_angle": 17.8,
+    "carry_distance": 205.1,
+    "clubtype": "6 Iron",
+    "spin_rate": 5900
+  },
+  {
+    "id": "602",
+    "playerid": "6",
+    "ball_speed": 117.5,
+    "launch_angle": 21.6,
+    "carry_distance": 172.4,
+    "clubtype": "8 Iron",
+    "spin_rate": 6800
+  },
+  {
+    "id": "701",
+    "playerid": "7",
+    "ball_speed": 166.2,
+    "launch_angle": 13.5,
+    "carry_distance": 268.3,
+    "clubtype": "Driver",
+    "spin_rate": 2620
+  },
+  {
+    "id": "702",
+    "playerid": "7",
+    "ball_speed": 161.6,
+    "launch_angle": 14.8,
+    "carry_distance": 256.1,
+    "clubtype": "Driver",
+    "spin_rate": 2710
+  },
+  {
+    "id": "801",
+    "playerid": "8",
+    "ball_speed": 130.4,
+    "launch_angle": 16.9,
+    "carry_distance": 214.7,
+    "clubtype": "5 Iron",
+    "spin_rate": 5600
+  },
+  {
+    "id": "802",
+    "playerid": "8",
+    "ball_speed": 123.2,
+    "launch_angle": 20.4,
+    "carry_distance": 188.9,
+    "clubtype": "7 Iron",
+    "spin_rate": 6350
+  }
+]
