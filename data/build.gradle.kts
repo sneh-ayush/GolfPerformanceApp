@@ -57,9 +57,5 @@ dependencies {
     implementation(libs.moshi.kotlin)
     ksp(libs.moshi.codegen)
     implementation(libs.okhttp.logging)
-
-
-
-
-
+    implementation(libs.koin.android)
 }
