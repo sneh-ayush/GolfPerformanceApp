@@ -5,22 +5,11 @@ import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkCapabilities
 import android.net.NetworkRequest
+import com.example.domain.connectivity.ConnectivityObserver
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.distinctUntilChanged
-
-interface ConnectivityObserver {
-
-    fun observe(): Flow<Status>
-
-    enum class Status {
-        Available,
-        Unavailable,
-        Losing,
-        Lost,
-    }
-}
 
 class ConnectivityObserverImpl(
     private val context: Context,
@@ -61,7 +50,8 @@ class ConnectivityObserverImpl(
     }.distinctUntilChanged()
 
     private fun currentStatus(): ConnectivityObserver.Status {
-        val network = connectivityManager.activeNetwork ?: return ConnectivityObserver.Status.Unavailable
+        val network = connectivityManager.activeNetwork
+            ?: return ConnectivityObserver.Status.Unavailable
         val capabilities = connectivityManager.getNetworkCapabilities(network)
             ?: return ConnectivityObserver.Status.Unavailable
 

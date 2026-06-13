@@ -3,10 +3,10 @@ package com.example.data.di
 import androidx.room.Room
 import com.example.data.GolfApi
 import com.example.data.NetworkConfig
-import com.example.data.connectivity.ConnectivityObserver
 import com.example.data.connectivity.ConnectivityObserverImpl
 import com.example.data.local.database.GolfDatabase
 import com.example.data.repository.GolfRepositoryImpl
+import com.example.domain.connectivity.ConnectivityObserver
 import com.example.domain.repository.GolfRepository
 import com.squareup.moshi.Moshi
 import okhttp3.OkHttpClient
@@ -15,6 +15,7 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import timber.log.Timber
 
 val dataModule = module {
 
@@ -27,7 +28,7 @@ val dataModule = module {
     }
 
     single {
-        HttpLoggingInterceptor().apply {
+        HttpLoggingInterceptor { message -> Timber.tag("OkHttp").d(message) }.apply {
             level = HttpLoggingInterceptor.Level.BODY
         }
     }

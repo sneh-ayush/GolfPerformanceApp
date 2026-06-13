@@ -58,4 +58,5 @@ dependencies {
     ksp(libs.moshi.codegen)
     implementation(libs.okhttp.logging)
     implementation(libs.koin.android)
+    implementation(libs.timber)
 }
