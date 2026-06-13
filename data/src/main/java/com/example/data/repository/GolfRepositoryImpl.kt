@@ -1,16 +1,35 @@
 package com.example.data.repository
 
+import com.example.data.GolfApi
+import com.example.data.local.dao.GolfDao
+import com.example.data.mapper.PlayerMapper.toDomain
+import com.example.data.mapper.PlayerMapper.toEntity
+import com.example.data.mapper.ShotMapper.toDomain
+import com.example.data.mapper.ShotMapper.toEntity
 import com.example.domain.model.Player
 import com.example.domain.model.Shot
 import com.example.domain.repository.GolfRepository
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
 
-class GolfRepositoryImpl : GolfRepository {
+class GolfRepositoryImpl(
+    private val golfApi: GolfApi,
+    private val golfDao: GolfDao,
+) : GolfRepository {
 
-    override suspend fun getPlayers(): List<Player> = emptyList()
+    override fun observePlayers(): Flow<List<Player>> =
+        golfDao.observePlayers().map { it.toDomain() }
 
-    override suspend fun getPlayerById(playerId: Long): Player? = null
+    override fun observeShots(playerId: String): Flow<List<Shot>> =
+        golfDao.observeShots(playerId).map { it.toDomain() }
 
-    override suspend fun getShotsByPlayerId(playerId: Long): List<Shot> = emptyList()
+    override suspend fun refreshPLayers() {
+        val players = golfApi.getPlayers().map { it.toEntity() }
+        golfDao.upsertPlayers(players)
+    }
 
-    override suspend fun getShotById(shotId: Long): Shot? = null
+    override suspend fun refreshShots() {
+        val shots = golfApi.getShots().map { it.toEntity() }
+        golfDao.upsertShots(shots)
+    }
 }
