@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.feature_player.R
 import com.example.feature_player.databinding.ItemPlayerBinding
 import com.example.golfperf.domain.model.Player
 
@@ -36,6 +37,8 @@ class PlayersAdapter(
             binding.executePendingBindings()
             Glide.with(binding.avatar)
                 .load(player.imageUrl)
+                .placeholder(R.drawable.ic_avatar_placeholder)
+                .error(R.drawable.ic_avatar_placeholder)
                 .circleCrop()
                 .into(binding.avatar)
             binding.root.setOnClickListener { onClick(player) }

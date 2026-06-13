@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.feature_player.R
@@ -55,9 +56,24 @@ class PlayersFragment : Fragment() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.uiState.collect { state ->
-                    adapter.submitList(state.players)
+                    render(state)
                 }
             }
+        }
+    }
+
+    private fun render(state: PlayersUiState) {
+        adapter.submitList(state.players)
+
+        binding.progressBar.isVisible = state.isLoading
+        binding.playerslist.isVisible = !state.isLoading
+
+        val isEmpty = !state.isLoading && state.players.isEmpty()
+        binding.statusContainer.isVisible = isEmpty
+        if (isEmpty) {
+            binding.statusText.text = state.errorMessage
+                ?.let { getString(R.string.players_error, it) }
+                ?: getString(R.string.players_empty)
         }
     }
 

@@ -1,0 +1,10 @@
+<resources>
+    <string name="players_title">Players</string>
+    <string name="players_subtitle">Performance leaderboard</string>
+    <string name="filter_by_club">Filter by name or club</string>
+    <string name="metric_mph">MPH</string>
+    <string name="speed_value">%1$.0f</string>
+    <string name="avg_ball_speed">Avg %1$.1f mph</string>
+    <string name="players_empty">No players to show</string>
+    <string name="players_error">Couldn\'t load players: %1$s</string>
+</resources>
