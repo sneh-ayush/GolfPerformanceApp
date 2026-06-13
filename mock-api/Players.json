@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "name": "Rory McIlroy",
+    "club": "TaylorMade Qi10 Driver",
+    "avgBallSpeed": 183.2,
+    "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Rory_McIlroy_Ryder_Cup_2025-195_%28cropped%29.jpg/330px-Rory_McIlroy_Ryder_Cup_2025-195_%28cropped%29.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Scottie Scheffler",
+    "club": "TaylorMade Qi10 Driver",
+    "avgBallSpeed": 178.4,
+    "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Scottie_Scheffler_Ryder_Cup_2025_%28cropped%29.jpg/330px-Scottie_Scheffler_Ryder_Cup_2025_%28cropped%29.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Jon Rahm",
+    "club": "Callaway Paradym Driver",
+    "avgBallSpeed": 182.1,
+    "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Jon_Rahm_Ryder_Cup_2025-130_%28cropped%29.jpg/330px-Jon_Rahm_Ryder_Cup_2025-130_%28cropped%29.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Collin Morikawa",
+    "club": "TaylorMade Qi10 Driver",
+    "avgBallSpeed": 171.6,
+    "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Collin_Morikawa_Travelers-019_%28cropped%29.jpg/330px-Collin_Morikawa_Travelers-019_%28cropped%29.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Jordan Spieth",
+    "club": "Titleist TSR3 Driver",
+    "avgBallSpeed": 172.3,
+    "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Jordan_Spieth_Travelers-092_%28cropped%29.jpg/330px-Jordan_Spieth_Travelers-092_%28cropped%29.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Brooks Koepka",
+    "club": "Srixon ZX5 Driver",
+    "avgBallSpeed": 178.9,
+    "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Brooks_Koepka_Portrait.jpg/330px-Brooks_Koepka_Portrait.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Xander Schauffele",
+    "club": "Callaway Paradym Driver",
+    "avgBallSpeed": 176.5,
+    "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Xander_Schauffele_Ryder_Cup_2025_%28cropped%29.jpg/330px-Xander_Schauffele_Ryder_Cup_2025_%28cropped%29.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Ludvig Åberg",
+    "club": "Titleist GT3 Driver",
+    "avgBallSpeed": 184.0,
+    "imageurl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Ludvig_%C3%85berg_Travelers-006_%28cropped%29%282%29.jpg/330px-Ludvig_%C3%85berg_Travelers-006_%28cropped%29%282%29.jpg"
+  }
+]

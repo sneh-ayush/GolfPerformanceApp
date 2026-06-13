@@ -11,6 +11,7 @@ import com.example.domain.model.Shot
 import com.example.domain.repository.GolfRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import timber.log.Timber
 
 class GolfRepositoryImpl(
     private val golfApi: GolfApi,
@@ -26,10 +27,12 @@ class GolfRepositoryImpl(
     override suspend fun refreshPLayers() {
         val players = golfApi.getPlayers().map { it.toEntity() }
         golfDao.upsertPlayers(players)
+        Timber.d("Refreshed %d players from API", players.size)
     }
 
     override suspend fun refreshShots() {
         val shots = golfApi.getShots().map { it.toEntity() }
         golfDao.upsertShots(shots)
+        Timber.d("Refreshed %d shots from API", shots.size)
     }
 }

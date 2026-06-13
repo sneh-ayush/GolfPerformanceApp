@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="splash_background">#FFFFFFFF</color>
+
+    <color name="md_theme_light_primary">#0F8B4C</color>
+    <color name="md_theme_light_onPrimary">#FFFFFFFF</color>
+    <color name="md_theme_light_secondary">#0F8B4C</color>
+
+    <color name="md_theme_dark_primary">#5FD68F</color>
+    <color name="md_theme_dark_onPrimary">#00391C</color>
+    <color name="md_theme_dark_secondary">#5FD68F</color>
 </resources>

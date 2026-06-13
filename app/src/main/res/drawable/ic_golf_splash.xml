@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/golf_player"
+        android:left="56dp"
+        android:top="56dp"
+        android:right="56dp"
+        android:bottom="56dp" />
+</layer-list>

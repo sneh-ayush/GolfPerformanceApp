@@ -4,6 +4,20 @@ plugins {
     alias (libs.plugins.ksp)
 }
 
+fun gitBranch(): String {
+    return try {
+        ProcessBuilder("git", "rev-parse", "--abbrev-ref", "HEAD")
+            .directory(rootDir)
+            .redirectErrorStream(true)
+            .start()
+            .inputStream.bufferedReader().use { it.readText() }.trim()
+    } catch (e: Exception) {
+        ""
+    }
+}
+
+val mockApiBranch = if (gitBranch() == "develop") "develop" else "main"
+
 android {
     namespace = "com.example.data"
     compileSdk = 36
@@ -13,6 +27,12 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+
+        buildConfigField("String", "MOCK_API_BRANCH", "\"$mockApiBranch\"")
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
 
     buildTypes {
@@ -35,7 +55,6 @@ android {
 
 dependencies {
     implementation(project(":domain"))
-    implementation(project(":core"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -58,4 +77,5 @@ dependencies {
     ksp(libs.moshi.codegen)
     implementation(libs.okhttp.logging)
     implementation(libs.koin.android)
+    implementation(libs.timber)
 }
