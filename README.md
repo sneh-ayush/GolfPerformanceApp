@@ -8,7 +8,7 @@ There are two screens:
 
 The data comes from JSON files hosted on GitHub. The app saves the data in a local database, so it still works without internet.
 
-## Screenshots
+## App Screenshots
 
 Players list:
 
@@ -116,4 +116,4 @@ This is handled in `data/build.gradle.kts` (it checks the current git branch) an
 - The app is read-only. There is no login or saving.
 - The launcher icon and splash screen use custom images from free to use sources.
 
-## Created by: Sneh Ayush (snehayush96@gmail.com)
+## Created by: Sneh Ayush
